@@ -40,9 +40,7 @@ footer{
     border-top:1px solid #8100F4;
     padding-top:10px;
 }
-<<<<<<< HEAD
 
-<<<<<<< HEAD
 form{
     margin-top:40px;
 }
@@ -53,12 +51,12 @@ form{
 
 .fil {
     color:#8100F4;
-=======
+}
+
 .fab{
     margin-right: 5px;
 }
->>>>>>> dda150699c6d7a8e1afe0b54696fc61c519adbcb
-=======
+
 .card-deck{
     margin-top: 50px;
     padding-left: 150px;
@@ -67,5 +65,4 @@ form{
 }
 .card-footer{
     text-align: right;
->>>>>>> 63c1395409080b83f300a929fdb53cfe6384ca23
 }
