@@ -16,6 +16,7 @@ li a.nav-link{
 .btn{
     color: #8100F4;
     border-color: #8100F4;
+    background-color: white;
 }
 
 .btn:hover{
@@ -31,4 +32,16 @@ footer{
     margin-top: 50px;
     border-top:1px solid #8100F4;
     padding-top:10px;
+}
+
+form{
+    margin-top:40px;
+}
+
+.contactezns{
+    margin-top: 30px;
+}
+
+.fil {
+    color:#8100F4;
 }
