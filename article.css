@@ -1,0 +1,52 @@
+.logo{
+    width: 40px;
+    margin-right: 5px;
+}
+.navbar-brand{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+li a.nav-link{
+    margin-left:50px;
+    text-transform: uppercase;
+}
+
+.btn{
+    color: #8100F4;
+    border-color: #8100F4;
+    background-color: white;
+}
+
+.btn:hover{
+    background-color: #8100F4;
+    border-color: white;
+}
+
+.carousel{
+    margin-top: 60px;
+}
+.titre-page{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+footer nav a{
+    color: black;
+}
+
+footer{
+    margin-top: 50px;
+    border-top:1px solid #8100F4;
+    padding-top:10px;
+}
+
+
+.fil {
+    color:#8100F4;
+}
+
+.fab{
+    margin-right: 5px;
+}
+
