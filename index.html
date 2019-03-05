@@ -6,40 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="icon" type="image/xpng" href="./images/WebAssembly_Logo.png">
     <title>WebAssembly</title>
 </head>
 <body>
     <header>
-            <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+            <a class="navbar-brand" href="https://webassembly.org/">
                 <img src="./images/WebAssembly_Logo.png" class= "logo" alt="logo">
-                <a class="navbar-brand" href="https://webassembly.org/">WebAssembly</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Actus
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Catégorie 1</a>
-                                    <a class="dropdown-item" href="#">Catégorie 2</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">A Propos</a>
-                            </li>
-                        </ul>
-                        <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                        </form>
-                    </div>
-                
-            </nav>
+                WebAssembly
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Actus
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Catégorie 1</a>
+                            <a class="dropdown-item" href="#">Catégorie 2</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">A Propos</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
     </header>
     <div class="container-fluid">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -50,13 +54,13 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./images/slider1.png" class="d-block w-100" height="8%" alt="navigateur party">
+                    <img src="./images/slider1bis.png" class="d-block w-100" height="8%" alt="navigateur party">
                 </div>
                 <div class="carousel-item">
                     <img src="./images/slider2.jpeg" class="d-block w-100" height="8%" alt="tech_view">
                 </div>
                 <div class="carousel-item">
-                    <img src="./images/slider3.png" class="d-block w-100" height="8%" alt="graphic">
+                    <img src="./images/slider4bis.png" class="d-block w-100" height="8%" alt="graphic">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -69,9 +73,9 @@
             </a>
         </div>
     </div>
-    <hr>
+    
     <div class="row">
-        <div class="col">
+        <div class="col titre-page">
             <h2>Dernières actualités</h2>
         </div>
     </div>
@@ -84,43 +88,47 @@
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
         </div>
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
+        <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
             </div>
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
+            <div class="card-footer">
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
         </div>
-    <footer class="bg-light">
-        <div class="container-fluid">
-            <div class="row ">
-                <nav class="nav flex-column offset-2">
-                    <a class="nav-link" href="#">A propos</a>
-                    <a class="nav-link" href="#">Nous contacter</a>
-                </nav>
-                <nav class="nav flex-column offset-2">
-                    <a class="nav-link" href="#">WebAssembly</a>
-                    <a class="nav-link" href="#">Mentions légales</a>
-                </nav>
-                <nav class="nav flex-column offset-2">
-                    <a class="nav-link" href="#">Facebook</a>
-                    <a class="nav-link" href="#">Github</a>
-                </nav>
+        <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
         </div>
-    </footer>
+    </div>
+        <footer class="bg-light">
+            <div class="container-fluid">
+                <div class="row ">
+                    <nav class="nav flex-column offset-2">
+                        <a class="nav-link" href="#">A propos</a>
+                        <a class="nav-link" href="#">Nous contacter</a>
+                    </nav>
+                    <nav class="nav flex-column offset-2">
+                        <a class="nav-link" href="#">WebAssembly</a>
+                        <a class="nav-link" href="#">Mentions légales</a>
+                    </nav>
+                    <nav class="nav flex-column offset-2">
+                    <a class="nav-link" href="#"><i class="fab fa-facebook-square"></i>Facebook</a>
+                    <a class="nav-link" href="https://github.com/webassembly"><i class="fab fa-github"></i>Github</a>
+                    </nav>
+                </div>
+            </div>
+        </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>   
 </body>
 </html>
+
+
