@@ -15,7 +15,6 @@ li a.nav-link{
 .btn{
     color: #8100F4;
     border-color: #8100F4;
-    background-color: white;
 }
 
 .btn:hover{
@@ -42,22 +41,8 @@ footer{
 }
 <<<<<<< HEAD
 
-<<<<<<< HEAD
-form{
-    margin-top:40px;
-}
-
-.contactezns{
-    margin-top: 30px;
-}
-
-.fil {
-    color:#8100F4;
-=======
 .fab{
     margin-right: 5px;
-}
->>>>>>> dda150699c6d7a8e1afe0b54696fc61c519adbcb
 =======
 .card-deck{
     margin-top: 50px;
