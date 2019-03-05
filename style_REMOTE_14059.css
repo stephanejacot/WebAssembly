@@ -3,13 +3,14 @@
     margin-right: 5px;
 }
 .navbar-brand{
-    font-size: 20px;
-    text-transform: uppercase;
+    font-size: 25px;
 }
-
+#navbarSupportedContent{
+    margin-left: 40px;
+    font-size: 25px;
+}
 li a.nav-link{
-    margin-left:50px;
-    text-transform: uppercase;
+    margin-left:50px; 
 }
 
 .btn{
@@ -22,14 +23,6 @@ li a.nav-link{
     border-color: white;
 }
 
-.carousel{
-    margin-top: 60px;
-}
-.titre-page{
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
 footer nav a{
     color: black;
 }
@@ -39,12 +32,6 @@ footer{
     border-top:1px solid #8100F4;
     padding-top:10px;
 }
-<<<<<<< HEAD
-
-.fab{
-    margin-right: 5px;
-}
-=======
 .card-deck{
     margin-top: 50px;
     padding-left: 150px;
@@ -53,5 +40,4 @@ footer{
 }
 .card-footer{
     text-align: right;
->>>>>>> 63c1395409080b83f300a929fdb53cfe6384ca23
 }
