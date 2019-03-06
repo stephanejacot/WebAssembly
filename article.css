@@ -26,11 +26,18 @@ li a.nav-link{
 .carousel{
     margin-top: 60px;
 }
-.titre-page{
-    margin-top: 15px;
+.title-page{
+    margin-top: 55px;
     margin-bottom: 15px;
 }
 
+.img-backg{
+    width: 80%;
+}
+
+.text-justify >p{
+    margin-top: 20px;
+}
 footer nav a{
     color: black;
 }
