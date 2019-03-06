@@ -32,17 +32,13 @@ footer{
     border-top:1px solid #8100F4;
     padding-top:10px;
 }
-/* Style page aboutus */
-.card-deck.us{
-    margin-top: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top:10px;
+.news{
+    margin-top: 80px;
 }
-.card-footer.us{
-    text-align: right;
+.allcards{
+    margin-top: 50px;   
 }
-.team{
-    margin-top: 50px;
+.blockquote{
+    font-size: 14px;
 }
-/* Fin style page aboutus */
+
