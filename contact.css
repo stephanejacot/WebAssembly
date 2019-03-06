@@ -12,6 +12,10 @@ li a.nav-link{
     text-transform: uppercase;
 }
 
+h1{
+    font-family: 'Amaranth', sans-serif;
+}
+
 .btn{
     color: #8100F4;
     border-color: #8100F4;
@@ -68,3 +72,19 @@ form{
     width: 100%;
     height: auto;
 }
+
+input[type="email"]::-webkit-input-placeholder
+{
+    color: #D3D3D3;
+}
+
+input[type="name"]::-webkit-input-placeholder
+{
+    color: #D3D3D3;
+}
+
+input[type="text"]::-webkit-input-placeholder
+{
+    color: #D3D3D3;
+}
+
