@@ -1,0 +1,70 @@
+.logo{
+    width: 40px;
+    margin-right: 5px;
+}
+.navbar-brand{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+li a.nav-link{
+    margin-left:50px;
+    text-transform: uppercase;
+}
+
+.btn{
+    color: #8100F4;
+    border-color: #8100F4;
+    background-color: white;
+}
+
+.btn:hover{
+    background-color: #8100F4;
+    border-color: white;
+}
+
+.titre-page{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+footer nav a{
+    color: black;
+}
+
+footer{
+    margin-top: 50px;
+    border-top:1px solid #8100F4;
+    padding-top:10px;
+}
+
+form{
+    margin-top:40px;
+}
+
+.contactezns{
+    margin-top: 30px;
+}
+
+.fil {
+    color:#8100F4;
+}
+
+.fab{
+    margin-right: 5px;
+}
+
+.card-deck{
+    margin-top: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top:10px;
+}
+.card-footer{
+    text-align: right;
+}
+
+.card>img{
+    width: 100%;
+    height: auto;
+}
