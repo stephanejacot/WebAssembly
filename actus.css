@@ -36,9 +36,12 @@ footer{
     margin-top: 80px;
 }
 .allcards{
-    margin-top: 20px;   
+    margin-top: 40px;   
 }
 .blockquote{
     font-size: 14px;
+}
+.card{
+    margin-top: 40px;   
 }
 
