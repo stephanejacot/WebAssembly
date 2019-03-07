@@ -26,6 +26,7 @@ li a.nav-link{
 }
 
 /* BREADCRUMB*/
+
 .fil {
     color:#8100F4;
 }
@@ -53,13 +54,19 @@ h3{
     font-family: 'Amaranth', sans-serif;
 }
 
-.border-source{
-    background-color: #E8EBEF;
-    padding:5px 0 5px 5px;
-}
-
 .border-source a{
     color: #8100F4;
+}
+
+/* WA PAGE */
+.note_wwa{
+background-color: #E8EBEF;
+}
+p{
+text-align: justify; 
+}
+.wwa_page>h3{
+margin-top: 3px;
 }
 
 /*CARD COLUMN ACCUEIL*/
@@ -69,6 +76,18 @@ h3{
     color: white;
     text-decoration: none;
 }    
+
+.lienarticle a
+{
+    color: #8100F4;
+    text-decoration: none;
+}
+
+.lienarticle a:hover
+{
+    color: white;
+    text-decoration: none;
+}
 
 /* CONTACT */
 h1{
@@ -114,33 +133,24 @@ footer{
     padding-top:10px;
 }
 
+.fab{
+    margin-right: 5px;
+}
+
 /* Style page aboutus */
 .card-deck.us{
     margin-top: 10px;
     padding-left: 50px;
     padding-right: 50px;
 }
-.fab{
-    margin-right: 5px;
-}
-
-/* A VOIR POUR SUPPRESSION >>> form*/
-form{
-    margin-top:40px;
-}
-.card-deck{
-    margin-top: 50px;
-    padding-left: 150px;
-    padding-right: 150px;
-    padding-top:10px;
-}
 .card-footer{
     text-align: right;
 }
+
 .team{
-    padding-top:10px;
-    margin-top: 80px;
- }
+    padding-top:25px;
+    margin-top: 55px;
+}
 .card-text{
     font-size: 15px;
 }
@@ -163,5 +173,3 @@ form{
 .card-text{
     text-align: justify;
 }
-
->>>>>>> 0f54ec58c2b2a7bbd1f0ec4d77f75c2e132b80a5

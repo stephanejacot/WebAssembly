@@ -18,7 +18,7 @@
 <body>
 
     <header>
-        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <img src="./images/WebAssembly_Logo.png" class="logo" alt="logo">
             <a class="navbar-brand" href="https://webassembly.org/">WebAssembly</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,84 +27,88 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="./index.html"> Accueil <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Actus <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="./webassembly.html"> WebAssembly <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">A Propos</a>
+                    <li class="nav-item active">
+                            <a class="nav-link" href="./actus.html"> Actus <span class="sr-only">(current)</span></a>
+                    </li>    
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./aboutus.html"> À Propos <span class="sr-only">(current)</span></a>
                     </li>
-                    </ul>
+                </ul>
                     <form class="form-inline my-2 my-lg-0">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                     </form>
-                </div>               
+            </div>               
         </nav>
     </header>
 
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb fil">
-                <li class="breadcrumb-item"><a href="#" class="fil">Accueil</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Nous contacter</li>
-            </ol>
-        </nav>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb fil">
+            <li class="breadcrumb-item"><a href="#" class="fil">Accueil</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Nous contacter</li>
+        </ol>
+    </nav>
 
-        <div class="row">
-            <div class="col offset-1 contactezns">
-                <h1> NOUS CONTACTER </h1>
-            </div>
+    <div class="row mt-5 mb-5">
+        <div class="col offset-1 contactezns">
+            <h1> Nous contacter </h1>
         </div>
+    </div>
 
-        <div class="row no-gutters align-items-center">
-            <form class="offset-1 col-lg-5 col-md-10 mr-3">
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Nom</label>
-                    <input type="name" class="form-control color-placeholder-contact" id="exampleFormControlInput1" placeholder="Prénom Nom">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Mail</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@mail.com">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Objet</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Objet du mail">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Votre message</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <button class="btn btn-primary" type="submit">Envoyer</button>
-                </div>
-            </form>
-
-            <div class="col-lg-5">
-                <img src="./images/image1bis.png" class="card-img-top" alt="course">
+    <div class="row no-gutters align-items-center">
+        <form class="offset-1 col-lg-5 col-md-10 mr-3">
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Nom</label>
+                <input type="name" class="form-control color-placeholder-contact" id="exampleFormControlInput1" placeholder="Prénom Nom">
             </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Mail</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@mail.com">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Objet</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Objet du mail">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Votre message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button class="btn btn-primary" type="submit">Envoyer</button>
+            </div>
+        </form>
+
+        <div class="col-lg-5">
+            <img src="./images/image1bis.png" class="card-img-top" alt="course">
         </div>
+    </div>
 
-        
+    
 
-        <footer class="bg-light">
-            <div class="container-fluid">
-                <div class="row ">
-                    <nav class="nav flex-column offset-2">
-                        <a class="nav-link" href="./aboutus.html">A propos</a>
-                        <a class="nav-link" href="./contact-us.html">Nous contacter</a>
-                    </nav>
-                    <nav class="nav flex-column offset-2">
-                        <a class="nav-link" href="./webassembly.html">WebAssembly</a>
-                        <a class="nav-link" href="#">Mentions légales</a>
-                    </nav>
-                    <nav class="nav flex-column offset-2">
+    <footer class="bg-light">
+        <div class="container">
+            <div class="row ">
+                <nav class="nav flex-column offset-2">
+                    <a class="nav-link" href="./aboutus.html">À propos</a>
+                    <a class="nav-link" href="./contact-us.html">Nous contacter</a>
+                </nav>
+                <nav class="nav flex-column offset-2">
+                    <a class="nav-link" href="./webassembly.html">WebAssembly</a>
+                    <a class="nav-link" href="#">Mentions légales</a>
+                </nav>
+                <nav class="nav flex-column offset-2">
                     <a class="nav-link" href="#"><i class="fab fa-facebook-square"></i>Facebook</a>
-                    <a class="nav-link" href="https://github.com/webassembly"><i class="fab fa-github"></i>Github</a>
-                    </nav>
-                </div>
+                    <a class="nav-link" href="https://github.com/webassembly" target="_blank"><i class="fab fa-github"></i>Github</a>
+                </nav>
             </div>
-            </footer>
+        </div>
+        <p class="d-flex justify-content-end pr-2"> &copy; Team GSMC WCS</p>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

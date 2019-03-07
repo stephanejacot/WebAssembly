@@ -17,7 +17,7 @@
 
 <body>
     <header>
-        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <img src="./images/WebAssembly_Logo.png" class="logo" alt="logo">
             <a class="navbar-brand" href="https://webassembly.org/">WebAssembly</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -47,10 +47,17 @@
             </div>
         </nav>
     </header>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb fil">
+            <li class="breadcrumb-item"><a href="#" class="fil">Accueil</a></li>
+            <li class="breadcrumb-item active" aria-current="page"> Actus </li>
+        </ol>
+    </nav>
+    
     </hr>
     <p><img src="./images/news.jpg" class="news  col-8 offset-2" alt="news"></p>
     <div class="allcards  col-8 offset-2">
-        <div class="card">
+        <div class="card mb-3">
             <div class="card-header">
                 <h3>Le WebAssembly serait moins performant en terme de rapidité que le code natif</h3>
             </div>
@@ -77,9 +84,9 @@
                 </blockquote>
             </div>
         </div>
-        <div class="card">
+        <div class="card mb-3">
             <div class="card-header">
-                <h3>MANDELBROT EN WEBASSEMBLY</h3>
+                <h3>Mandelbrot en WebAssembly</h3>
             </div>
             <div class="card-body">
                 <blockquote class="blockquote mb-0">
@@ -98,7 +105,7 @@
                 </blockquote>
             </div>
         </div>
-        <div class="card">
+        <div class="card mb-3">
             <div class="card-header">
                 <h3>WebAssembly et Angular le combo parfait ?</h3>
             </div>
@@ -119,7 +126,7 @@
                 </blockquote>
             </div>
         </div>
-        <div class="card">
+        <div class="card mb-3">
             <div class="card-header">
                 <h3>Une introduction cartoonesque à WebAssembly</h3>
             </div>
@@ -143,7 +150,7 @@
                 </blockquote>
             </div>
         </div>
-        <div class="card">
+        <div class="card mb-3">
             <div class="card-header">
                 <h3>Le web assembly</h3>
             </div>
@@ -180,6 +187,7 @@
                 </nav>
             </div>
         </div>
+        <p class="d-flex justify-content-end pr-2"> &copy; Team GSMC WCS</p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
