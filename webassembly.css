@@ -1,30 +1,37 @@
 /* What's webAssembly page */
 
-.bigdaddy_wwa{
-    /* box-sizing: border-box;
-    padding-left: 20%;
-    max-width: 80%; */
-}
 .note_wwa{
     background-color: #E8EBEF;
 }
+p{
+    text-align: justify; 
+}
+.wwa_page>h3{
+    margin-top: 3px;
+}
+/* Fonts */
 
-
-/* Homepage navbar footer*/
+.navbar a, h1, h3{
+    font-family: 'Amaranth', sans-serif;
+}
+/* Homepage navbar */
 
 .logo{
     width: 40px;
     margin-right: 5px;
 }
 .navbar-brand{
-    font-size: 25px;
+    font-size: 20px;
+    text-transform: uppercase;
 }
+/* A voir ce que ça donne :
 #navbarSupportedContent{
     margin-left: 40px;
-    font-size: 25px;
+    font-size: 25px; */
 }
 li a.nav-link{
-    margin-left:50px; 
+    margin-left:50px;
+    text-transform: uppercase; 
 }
 
 .btn{
@@ -37,6 +44,14 @@ li a.nav-link{
     background-color: #8100F4;
     border-color: white;
 }
+.fil {
+    color:#8100F4;
+}
+.title-page{
+    margin-top: 55px;
+    margin-bottom: 25px;
+}
+/* Homepage footer */
 
 footer nav a{
     color: black;
@@ -47,7 +62,10 @@ footer{
     border-top:1px solid #8100F4;
     padding-top:10px;
 }
-<<<<<<< HEAD
+.fab{
+    margin-right: 5px;
+}
+
 
 form{
     margin-top:40px;
@@ -57,11 +75,7 @@ form{
     margin-top: 30px;
 }
 
-.fil {
-    color:#8100F4;
-}
-=======
-.card-deck{
+/* .card-deck{
     margin-top: 50px;
     padding-left: 150px;
     padding-right: 150px;
@@ -69,12 +83,7 @@ form{
 }
 .card-footer{
     text-align: right;
-}
-/* Fonts */
+} */
 
-.navbar a, h1{
-    font-family: 'Amaranth', sans-serif;
-}
-.navbar{
-    text-transform: uppercase;
-}
+
+

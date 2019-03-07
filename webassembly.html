@@ -32,7 +32,7 @@
                         <a class="nav-link" href="#">Actus <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">A Propos<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">À Propos<span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -43,17 +43,21 @@
 
         </nav>
     </header>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb fil">
+        <li class="breadcrumb-item"><a href="#" class="fil">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">WebAssembly</li>
+        </ol>
+    </nav>
+    <div class="wwa_page">
 
-    <hr>
-    <div class="bigdaddy_wwa">
 
-
-        <h1 class="text-center" id="Qu_est-ce_que_WebAssembly">Qu'est-ce que WebAssembly ?</h1>
+        <h1 class="title-page text-center" id="Qu_est-ce_que_WebAssembly">Qu'est-ce que WebAssembly ?</h1>
 
         <div class="container_wwa_p1">
             <div class="row">
                 <div class="col-10 offset-1" id="putaindimage">
-                    <img src="./images/wwa1.png" class="img-fluid" alt="What is Webassembly">
+                    <img src="./images/wwa1.png" class="img-fluid mb-5" alt="What is Webassembly">
                 </div>
             </div>
             <div class="row">
@@ -76,12 +80,12 @@
                     </p>
                     <p> JavaScript est un langage haut niveau, flexible et suffisamment expressif pour écrire des
                         applications
-                        web. Il possède beaucoup d'avantages — il est dynamiquement typé, ne nécessite aucune étape
+                        web. Il possède beaucoup d'avantages il est dynamiquement typé, ne nécessite aucune étape
                         de compilation, et a un écosystème foisonnant qui lui fourni de puissants frameworks,
                         bibliothèques,
                         et
                         autres outils.</p>
-                    <p>Cela a d'énormes implications pour la plate-forme web — il fournit un moyen d'exécuter un
+                    <p>Cela a d'énormes implications pour la plate-forme web il fournit un moyen d'exécuter un
                         code écrit dans
                         divers
                         langages sur le web à une vitesse proche du natif, avec des applications clientes exécutées
@@ -114,7 +118,7 @@
                 Community
                 Group</a> avec les objectif suivants :</p>
         <div class="container_wwa_p2 col-8 offset-2">
-            <div class="row">
+            <div class="row mb-3">
                 <div class="col-lg-6">
                     <div class="card">
                         <div class="card-body">
@@ -129,17 +133,17 @@
                 <div class="col-lg-6">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title"><strong>Être lisible et débuggable</strong></h5>
-                            <p class="card-text">WebAssembly est un langage d'assemblage de
-                                bas niveau, mais son
-                                format de texte est lisible par l'homme et permet au code d'être écrit, lu et
-                                débuggé à la main.
+                            <h5 class="card-title"><strong>Ne pas casser le web</strong></h5>
+                            <p class="card-text">WebAssembly est conçu de manière à facilement
+                                s'associer aux autres
+                                technologies
+                                web et à maintenir une rétrocompatibilité.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row mb-3">
                 <div class="col-lg-6">
                     <div class="card">
                         <div class="card-body">
@@ -159,11 +163,11 @@
                 <div class="col-lg-6">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title"><strong>Ne pas casser le web</strong></h5>
-                            <p>WebAssembly est conçu de manière à facilement
-                                s'associer aux autres
-                                technologies
-                                web et à maintenir une rétrocompatibilité.
+                            <h5 class="card-title"><strong>Être lisible et débuggable</strong></h5>
+                            <p class="card-text">WebAssembly est un langage d'assemblage de
+                                bas niveau, mais son
+                                format de texte est lisible par l'homme et permet au code d'être écrit, lu et
+                                débuggé à la main.
                             </p>
                         </div>
                     </div>
@@ -248,7 +252,7 @@
                 Tous ces concepts se retrouvent totalement dans l'API WebAssembly JavaScript.
             </p>
 
-            <div class="row">
+            <div class="row mb-3">
                 <div class="col-lg-6">
                     <div class="card">
                         <div class="card-body">
@@ -256,12 +260,11 @@
                             <p class="card-text">Représente un binaire WebAssembly qui a été compilé en code
                                 exécutable par
                                 le
-                                navigateur. Un module est sans état et - comme un Blob -
-                                peut donc être explicitement mis en cache dans IndexedDB ou partagé entre le
+                                navigateur. Un module est sans état et peut donc être explicitement mis en cache dans IndexedDB ou partagé entre le
                                 contexte
                                 fenêtre et les
                                 workers (via post message()). Un module
-                                déclare des imports et exports au même titre qu'un module ES2015.
+                                déclare des imports et des exports.
                             </p>
                         </div>
                     </div>
@@ -269,20 +272,23 @@
                 <div class="col-lg-6">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title"><strong>Mémoire </strong></h5>
-                            <p class="card-text">Représente un ArrayBuffer redimensionnable qui
-                                contient un
-                                tableau
-                                d'octets
-                                contiguë accessible en lecture/écriture par les instructions bas niveau d'accès
-                                mémoire du
-                                WebAssembly.
+                            <h5 class="card-title"><strong>Instance</strong></h5>
+                            <p class="card-text">Représente un module associé avec tous les états
+                                qu'il utilise à
+                                l'exécution
+                                à
+                                savoir la mémoire, la table précédemment citée et un ensemble de données
+                                importées. Une
+                                instance est
+                                comme
+                                un module ES2015 qui a été chargée dans un contexte global avec un ensemble
+                                d'imports.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row mb-3">
                 <div class="col-lg-6">
                     <div class="card">
                         <div class="card-body">
@@ -302,17 +308,14 @@
                 <div class="col-lg-6">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title"><strong>Instance </strong></h5>
-                            <p class="card-text">Représente un module associé avec tous les états
-                                qu'il utilise à
-                                l'exécution
-                                à
-                                savoir la mémoire, la table précédemment citée et un ensemble de données
-                                importées. Une
-                                instance est
-                                comme
-                                un module ES2015 qui a été chargée dans un contexte global avec un ensemble
-                                d'imports.
+                            <h5 class="card-title"><strong>Mémoire</strong></h5>
+                            <p class="card-text">Représente un ArrayBuffer redimensionnable qui
+                                contient un
+                                tableau
+                                d'octets
+                                contiguë accessible en lecture/écriture par les instructions bas niveau d'accès
+                                mémoire du
+                                WebAssembly.
                             </p>
                         </div>
                     </div>
@@ -393,7 +396,7 @@
         <div class="container-fluid">
             <div class="row ">
                 <nav class="nav flex-column offset-2">
-                    <a class="nav-link" href="#">A propos</a>
+                    <a class="nav-link" href="#">À propos</a>
                     <a class="nav-link" href="#">Nous contacter</a>
                 </nav>
                 <nav class="nav flex-column offset-2">
