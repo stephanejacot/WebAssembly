@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="actus.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="icon" type="image/xpng" href="./images/WebAssembly_Logo.png">
+    <title>WebAssembly</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+            <a class="navbar-brand" href="https://webassembly.org/">
+                <img src="./images/WebAssembly_Logo.png" class="logo" alt="logo">
+                WebAssembly
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Actus
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Catégorie 1</a>
+                            <a class="dropdown-item" href="#">Catégorie 2</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">A Propos</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    </hr>
+    <p><img src="./images/news.jpg" class="news  col-8 offset-2" alt="news"></p>
+    <div class="allcards  col-8 offset-2">
+        <div class="card">
+            <div class="card-header">
+                <h3>Le WebAssembly serait moins performant en terme de rapidité que le code natif</h3>
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p>“Mind the gap : Analyzing of the performance of WebAssembly vs. Native code” en français
+                        “Attention aux lacunes : Analyse des performances de WebAssembly par rapport au code natif”,
+                        c’est le titre d’un rapport publié ce 25 janvier par une équipe composée de quatre professeurs
+                        de l’université de Massachusetts. Dans ce document, ils mettent en évidences certaines lacunes
+                        qu’ils ont observées dans l’utilisation de WebAssembly pour produire du bytecode en compilant
+                        des langages de haut niveau tels que le C ou le C++. WebAssembly, abrégé WASM, est une norme
+                        développée par un groupe de travail, le W3C WebAssembly, pour le développement d’application
+                        Web. </p>
+                    <p>Il est conçu pour compléter le JavaScript avec des performances supérieures. Le standard consiste
+                        en un bytecode, sa représentation textuelle et un environnement d'exécution dans une sandbox
+                        compatible avec JavaScript. Il peut être exécuté dans un navigateur Web et en dehors. Le
+                        bytecode est généralement produit en compilant un langage de haut niveau. Parmi les premiers
+                        langages supportés figurent Rust, le C et C++. Les navigateurs Web compilent le bytecode en
+                        langage machine avant de l'exécuter. Sa première version a été présentée en juin 2015 et sa
+                        dernière version, la version 1.0, date d’octobre 2017. </p>
+                    <footer class="blockquote-footer">Source <a
+                            href="https://www.developpez.com/actu/244144/Le-WebAssembly-serait-moins-performant-en-terme-de-rapidite-que-le-code-natif-selon-les-resultats-d-une-etude/"
+                            target="_blank">developpez.com</a> </footer>
+                </blockquote>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3>MANDELBROT EN WEBASSEMBLY</h3>
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p>Ainsi donc, grâce à WebAssembly, il serait possible de faire tourner des programmes fulgurants
+                        dans une page Web. Mazette ! Pourquoi ne pas tester la proposition en réalisant un petit
+                        programme qui requiert traditionnellement une certaine puissance de calcul, comme une
+                        représentation de l’ensemble de Mandelbrot ? Ce serait plus sympa que le jeu de la vie de Conway
+                        comme proposé ici, qui est certes fascinant, mais pas des plus sexy à regarder.</p>
+                    <p>Ce serait aussi l’opportunité de discuter un peu des performances des opérations graphiques
+                        nécessitant de travailler au pixel pour produire une image dans une page Web. Oh! nous ne
+                        sortirons pas l’artillerie lourde, à savoir WebGL, qui a été longuement présenté dans plusieurs
+                        articles sur ce blog. Nous nous concentrerons simplement sur le contexte 2D d’un objet "canvas",
+                        en dessinant au pixel.</p>
+                    <footer class="blockquote-footer">Source <a href="http://www.stashofcode.fr/category/webassembly/"
+                            target="_blank">stashofcode.fr</a> </footer>
+                </blockquote>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3>WebAssembly et Angular le combo parfait ?</h3>
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p>Le web gagne de plus en plus en complexité, en effet aujourd’hui la plupart des sites web tendent
+                        à utiliser des technologies coûteuses en ressources : réalité virtuelle, intégration 3D,
+                        algorithmes de recherche, etc.</p>
+                    <p>Pour répondre à cette demande, en 2015, Google et asm.js annoncèrent l’arrivée prochaine d’une
+                        technologie innovante capable de s’allier à Javascript pour optimiser la vitesse d’exécution de
+                        certains processus coûteux, je parle bien entendu de WebAssembly. WebAssembly est un nouveau
+                        langage de bas niveau de type assembleur, formaté en bytecode (instructions proches du langage
+                        machine), exécutable dans les navigateurs modernes le supportant (Chrome, Edge, Mozilla Firefox
+                        and Safari) et se voulant aussi performants que des langages de bas niveaux tels que C, C++ ou
+                        Rust. </p>
+                    <footer class="blockquote-footer">Source <a href="https://blog.3ie.fr/webassembly-angular/"
+                            target="_blank">blog.3ie.fr</a> </footer>
+                </blockquote>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3>Une introduction cartoonesque à WebAssembly</h3>
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p>WebAssembly est rapide. Vous avez sans doute déjà entendu ça. Mais qu’est-ce qui rend WebAssembly
+                        si rapide ? Dans cette série d’articles, c’est exactement ce que je compte vous expliquer.</p>
+                    <p>
+                        <h6>Mhmmm, c’est quoi au juste WebAssembly ?</h6>
+                    </p>
+                    <p>WebAssembly est une façon de prendre du code écrit dans un langage de programmation différent de
+                        JavaScript et de le faire s’exécuter dans le navigateur. Ainsi, quand les gens disent que
+                        WebAssembly est rapide, c’est en le comparant à JavaScript. Maintenant, que l’on soit clair, je
+                        ne veux pas dire qu’il s’agit d’une situation binaire où il faudrait utiliser uniquement
+                        WebAssembly ou uniquement JavaScript. En fait c’est l’inverse, on s’attend à ce que les
+                        développeurs utilisent les deux dans la même application. Cependant, il est utile de comparer
+                        les deux afin de mieux comprendre le potentiel de WebAssembly.</p>
+                    <footer class="blockquote-footer">Source <a
+                            href="https://tech.mozfr.org/post/2017/03/08/Une-introduction-cartoonesque-a-WebAssembly"
+                            target="_blank">tech.mozfr.org</a> </footer>
+                </blockquote>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3>Le web assembly</h3>
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p>Le web assembly est une technologie qui existe depuis déjà plusieurs années et qui vient de
+                        passer une étape importante. Son but est simple, comme le décrit très bien son nom, est d'offrir
+                        au web un moyen d'interpreter de l'assembly, c'est à dire une syntaxe proche des langages très
+                        bas niveaux.</p>
+                    <p>Pourquoi le web assembly, depuis quand existe t-il et surtout quand et comment pourrons nous
+                        l'utiliser a pleine puissance sans avoir à se soucier des répercussions éventuelles ?</p>
+                    <footer class="blockquote-footer">Source <a
+                            href="https://www.supinfo.com/articles/single/5262-web-assembly"
+                            target="_blank">supinfo.com</a> </footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light">
+        <div class="container-fluid">
+            <div class="row ">
+                <nav class="nav flex-column offset-2">
+                    <a class="nav-link" href="#">A propos</a>
+                    <a class="nav-link" href="#">Nous contacter</a>
+                </nav>
+                <nav class="nav flex-column offset-2">
+                    <a class="nav-link" href="#">WebAssembly</a>
+                    <a class="nav-link" href="#">Mentions légales</a>
+                </nav>
+                <nav class="nav flex-column offset-2">
+                    <a class="nav-link" href="#"><i class="fab fa-facebook-square"></i>Facebook</a>
+                    <a class="nav-link" href="https://github.com/webassembly"><i class="fab fa-github"></i>Github</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
