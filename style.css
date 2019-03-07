@@ -62,6 +62,14 @@ h3{
     color: #8100F4;
 }
 
+/*CARD COLUMN ACCUEIL*/
+
+.lienteam a
+{
+    color: white;
+    text-decoration: none;
+}    
+
 /* CONTACT */
 h1{
     font-family: 'Amaranth', sans-serif;
