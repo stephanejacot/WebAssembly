@@ -7,6 +7,10 @@
 .navbar-brand{
     font-size: 25px;
 }
+.navbar a, h1{
+    font-family: 'Amaranth', sans-serif;
+}
+
 #navbarSupportedContent{
     margin-left: 40px;
     font-size: 25px;
@@ -33,10 +37,7 @@ footer nav a{
 
 /* BREADCRUMB CSS*/
 
-.fil{
-    color:#8100F4;
-}
-
+/
 /* END CSS BREADCRUMB*/
 
 
