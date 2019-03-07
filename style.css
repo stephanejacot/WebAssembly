@@ -114,6 +114,12 @@ footer{
     padding-top:10px;
 }
 
+/* Style page aboutus */
+.card-deck.us{
+    margin-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
 .fab{
     margin-right: 5px;
 }
@@ -122,13 +128,6 @@ footer{
 form{
     margin-top:40px;
 }
-
-
-
-
-
-/* A supprimer ?? >>> validation team
-
 .card-deck{
     margin-top: 50px;
     padding-left: 150px;
@@ -138,7 +137,14 @@ form{
 .card-footer{
     text-align: right;
 }
-*/
+.team{
+    padding-top:10px;
+    margin-top: 80px;
+ }
+.card-text{
+    font-size: 15px;
+}
+/* Fin style page aboutus*/
 
 /* CARDS COLUMN*/
 .card>img{
@@ -158,3 +164,4 @@ form{
     text-align: justify;
 }
 
+>>>>>>> 0f54ec58c2b2a7bbd1f0ec4d77f75c2e132b80a5
