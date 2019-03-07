@@ -1,0 +1,175 @@
+/* NAVBAR */ 
+
+.logo{
+    width: 40px;
+    margin-right: 5px;
+}
+.navbar-brand{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+li a.nav-link{
+    margin-left:50px;
+    text-transform: uppercase;
+}
+
+.btn{
+    color: #8100F4;
+    border-color: #8100F4;
+    background-color: white;
+}
+
+.btn:hover{
+    background-color: #8100F4;
+    border-color: white;
+}
+
+/* BREADCRUMB*/
+
+.fil {
+    color:#8100F4;
+}
+
+.carousel{
+    margin-top: 60px;
+}
+.titre-page{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* ARTICLE */
+
+.title-page{
+    margin-top: 55px;
+    margin-bottom: 25px;
+}
+
+.text-justify >p{
+    margin-top: 20px;
+}
+
+h3{
+    font-family: 'Amaranth', sans-serif;
+}
+
+.border-source a{
+    color: #8100F4;
+}
+
+/* WA PAGE */
+.note_wwa{
+background-color: #E8EBEF;
+}
+p{
+text-align: justify; 
+}
+.wwa_page>h3{
+margin-top: 3px;
+}
+
+/*CARD COLUMN ACCUEIL*/
+
+.lienteam a
+{
+    color: white;
+    text-decoration: none;
+}    
+
+.lienarticle a
+{
+    color: #8100F4;
+    text-decoration: none;
+}
+
+.lienarticle a:hover
+{
+    color: white;
+    text-decoration: none;
+}
+
+/* CONTACT */
+h1{
+    font-family: 'Amaranth', sans-serif;
+}
+
+.titre-page{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+form{
+    margin-top:40px;
+}
+
+.contactezns{
+    margin-top: 30px;
+}
+
+input[type="email"]::-webkit-input-placeholder
+{
+    color: #D3D3D3;
+}
+
+input[type="name"]::-webkit-input-placeholder
+{
+    color: #D3D3D3;
+}
+
+input[type="text"]::-webkit-input-placeholder
+{
+    color: #D3D3D3;
+}
+
+/* FOOTER*/
+footer nav a{
+    color: black;
+}
+
+footer{
+    margin-top: 50px;
+    border-top:1px solid #8100F4;
+    padding-top:10px;
+}
+
+.fab{
+    margin-right: 5px;
+}
+
+/* Style page aboutus */
+.card-deck.us{
+    margin-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.card-footer{
+    text-align: right;
+}
+
+.team{
+    padding-top:25px;
+    margin-top: 55px;
+}
+.card-text{
+    font-size: 15px;
+}
+/* Fin style page aboutus*/
+
+/* CARDS COLUMN*/
+.card>img{
+    width: 100%;
+    height: auto;
+}
+
+.navbar a, h1{
+    font-family: 'Amaranth', sans-serif;
+}
+
+.bg-card{
+    background-color: #8100F4;
+}
+
+.card-text{
+    text-align: justify;
+}

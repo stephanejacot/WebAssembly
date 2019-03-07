@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+    <link rel="icon" type="image/xpng" href="./images/WebAssembly_Logo.png">
+    <title>WebAssembly</title>
+</head>
+
+<body>
+
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <img src="./images/WebAssembly_Logo.png" class="logo" alt="logo">
+                <a class="navbar-brand" href="https://webassembly.org/">WebAssembly</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./index.html"> Accueil <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./webassembly.html"> WebAssembly <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                                <a class="nav-link" href="./actus.html"> Actus <span class="sr-only">(current)</span></a>
+                        </li>    
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./aboutus.html"> À Propos <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                </div>               
+            </nav>
+        </header>
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb fil">
+                <li class="breadcrumb-item"><a href="./index.html" class="fil"> Accueil </a></li>
+                <li class="breadcrumb-item active" aria-current="page"> Actus / Article </li>
+            </ol>
+        </nav>
+
+        <div class="title-page text-center mb-5 mt-5">
+            <h1> Amélioration des performances de WebAssembly dans les navigateurs </h1>
+        </div>
+
+        <div class="row">
+            <div> <img src="./images/WebAssembly-Explained.jpg" class="col-8 offset-2 mb-3"> </div>
+                <div class="col-6 offset-3">
+                    <div class="text-justify">
+                        <p> 
+                            Certaines améliorations de la vitesse viendront à mesure que les navigateurs amélioreront la prise en charge de WebAssembly dans leurs moteurs. Les éditeurs de navigateurs travaillent sur ces problèmes de manière indépendante.
+                            <h3>Appels de fonction plus rapides entre JS et WebAssembly</h3>
+                            Actuellement, l'appel d'une fonction WebAssembly dans le code JS est plus lent que nécessaire. C’est parce qu’il faut faire quelque chose qui s'appelle «trampoline». JIT ne sait pas comment traiter directement avec WebAssembly, il doit donc acheminer WebAssembly vers quelque chose qui le fait. Il s’agit d’un élément de code lent dans le moteur lui-même, qui permet d’exécuter le code optimisé WebAssembly. Cela peut être jusqu'à 100 fois plus lent que si le JIT savait comment le gérer directement. Vous ne remarquerez pas cette surcharge si vous passez une seule tâche volumineuse au module WebAssembly. Mais si vous avez beaucoup de va-et-vient entre WebAssembly et JS (comme vous le faites pour des tâches plus petites), alors cette surcharge est perceptible.
+                        </p>
+                        <p>
+                            <h3>Temps de chargement plus rapide</h3>
+                            Les JIT doivent gérer le compromis entre des temps de chargement plus courts et des temps d'exécution plus rapides. Si vous passez plus de temps à compiler et à optimiser à l'avance, cela accélère l'exécution, mais ralentit le démarrage. Il ya beaucoup de travail en cours pour équilibrer la compilation initiale (ce qui garantit qu’il n’ya plus de jank une fois le code démarré) et le fait est que la plupart des parties du code ne seront pas exécutées assez souvent pour que l’optimisation en vaille la peine. WebAssembly n'ayant pas besoin de spéculer sur les types qui seront utilisés, les moteurs n'ont pas à se soucier de la surveillance des types au moment de l'exécution. Cela leur donne plus d'options, par exemple en parallélisant le travail de compilation avec l'exécution. De plus, les ajouts récents à l'API JavaScript permettront la compilation en continu de WebAssembly. Cela signifie que le moteur peut commencer à compiler alors que des octets sont encore en cours de téléchargement. Dans Firefox, nous travaillons sur un système à deux compilateurs. Un compilateur s'exécutera à l'avance et fera un très bon travail pour optimiser le code. Pendant que ce code est en cours d’exécution, un autre compilateur effectuera une optimisation complète en arrière-plan. La version entièrement optimisée du code sera permutée dès qu’elle sera prête.
+                        </p>
+                        <p>
+                            <h3>Ajout de fonctionnalités post-MVP à la spécification</h3>
+                            L'un des objectifs de WebAssembly est de spécifier de petits morceaux et de tester en cours de route plutôt que de tout concevoir à l'avance. Cela signifie que de nombreuses fonctionnalités sont attendues, mais qu’elles n’ont pas encore été entièrement réfléchies. Ils devront passer par le processus de spécification, dans lequel tous les éditeurs de navigateurs sont actifs. Ces fonctionnalités sont appelées fonctionnalités futures. En voici quelques exemples.
+                        </p>
+                        <p>
+                            <h3>Travailler directement avec le DOM </h3>
+                            Actuellement, il n’ya aucun moyen d’interagir avec le DOM. Cela signifie que vous ne pouvez pas faire quelque chose comme element.innerHTML pour mettre à jour un noeud à partir de WebAssembly. Au lieu de cela, vous devez passer par JS pour définir la valeur. Cela peut signifier renvoyer une valeur à l'appelant JavaScript. D'autre part, cela peut signifier l'appel d'une fonction JavaScript à partir de WebAssembly. Les fonctions JavaScript et WebAssembly peuvent être utilisées en tant qu'importations dans un module WebAssembly. Quoi qu'il en soit, il est probable que l'utilisation de JavaScript soit plus lente que l'accès direct. Certaines applications de WebAssembly peuvent être bloquées jusqu'à ce que le problème soit résolu.
+                        </p>
+                        <p>
+                            <h3> Accès simultané à la mémoire partagée </h3>
+                            Une façon d'accélérer le code est de permettre à différentes parties du code de s'exécuter en même temps, en parallèle. Cependant, cela peut parfois se retourner contre vous, car la surcharge de communication entre les threads peut prendre plus de temps que la tâche n'en aurait au départ. Mais si vous pouvez partager la mémoire entre les threads, cela réduit ce temps système. Pour ce faire, WebAssembly utilisera le nouveau SharedArrayBuffer de JavaScript. Une fois que cela est en place dans les navigateurs, le groupe de travail peut commencer à spécifier comment WebAssembly doit fonctionner avec eux.
+                        <p>
+                            <h3>SIMD</h3>
+                            Si vous lisez d'autres articles ou regardez des discussions sur WebAssembly, vous entendrez peut-être parler du support SIMD. L'acronyme signifie une seule instruction, plusieurs données. C’est une autre façon de faire les choses en parallèle. SIMD permet de prendre une grande structure de données, comme un vecteur de nombres différents, et d'appliquer la même instruction à différentes parties en même temps. De cette façon, il peut considérablement accélérer les types de calculs complexes dont vous avez besoin pour les jeux ou la réalité virtuelle. Ce n'est pas trop important pour le développeur d'applications web moyen. Mais il est très important pour les développeurs travaillant avec le multimédia, tels que les développeurs de jeux.
+                        </p>
+                        <p>
+                            <h3>Gestion des exceptions</h3>
+                            De nombreuses bases de code dans des langages tels que C ++ utilisent des exceptions. Cependant, les exceptions ne sont pas encore spécifiées dans WebAssembly. Si vous compilez votre code avec Emscripten, il émulera la gestion des exceptions pour certains niveaux d'optimisation du compilateur. C'est assez lent, cependant, vous pouvez donc utiliser l'indicateur DISABLE_EXCEPTION_CATCHING pour le désactiver. Une fois que les exceptions sont gérées de manière native dans WebAssembly, cette émulation ne sera plus nécessaire.
+                        </p>
+                        <p>
+                            <h3>Autres améliorations facilitant la tâche des développeurs</h3>
+                            Certaines fonctionnalités futures n’affecteront pas les performances, mais permettront aux développeurs de travailler plus facilement avec WebAssembly.
+                            <ul>
+                                <li>Des outils de développement de niveau source de première classe. Actuellement, le débogage de WebAssembly dans le navigateur revient à déboguer l’assemblage brut. Très peu de développeurs peuvent toutefois mapper mentalement leur code source en assembleur. Nous cherchons des moyens d’améliorer la prise en charge des outils afin que les développeurs puissent déboguer leur code source.</li>
+                                <li>Collecte des ordures. Si vous pouvez définir vos types à l'avance, vous devriez pouvoir transformer votre code en WebAssembly. Le code utilisant quelque chose comme TypeScript devrait donc être compilable avec WebAssembly. Le seul accroc qui existe actuellement, cependant, est que WebAssembly ne sait pas comment interagir avec les garbage collectors existants, comme celui intégré au moteur JS. L’idée de cette fonctionnalité future est de donner à WebAssembly un accès de premier ordre au GC intégré avec un ensemble de types de primitives et d’opérations de GC de bas niveau.</li>
+                                <li>Intégration du module ES6. Les navigateurs ajoutent actuellement la prise en charge du chargement de modules JavaScript à l’aide de la balise script. Une fois cette fonctionnalité ajoutée.</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <p class="bg-light pl-3 pt-1 pb-1">
+                        <a href="https://hacks.mozilla.org/2017/02/where-is-webassembly-now-and-whats-next/"> Source</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    <footer class="bg-light">
+        <div class="container">
+            <div class="row ">
+                <nav class="nav flex-column offset-2">
+                    <a class="nav-link" href="./aboutus.html">À propos</a>
+                    <a class="nav-link" href="./contact-us.html">Nous contacter</a>
+                </nav>
+                <nav class="nav flex-column offset-2">
+                    <a class="nav-link" href="./webassembly.html">WebAssembly</a>
+                    <a class="nav-link" href="#">Mentions légales</a>
+                </nav>
+                <nav class="nav flex-column offset-2">
+                    <a class="nav-link" href="#"><i class="fab fa-facebook-square"></i>Facebook</a>
+                    <a class="nav-link" href="https://github.com/webassembly" target="_blank"><i class="fab fa-github"></i>Github</a>
+                </nav>
+            </div>
+        </div>
+        <p class="d-flex justify-content-end pr-2"> &copy; Team GSMC WCS</p>
+    </footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>   
+</body>
+</html>
