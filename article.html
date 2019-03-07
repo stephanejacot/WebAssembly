@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="article.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
     <link rel="icon" type="image/xpng" href="./images/WebAssembly_Logo.png">
     <title>WebAssembly</title>
 </head>
@@ -31,7 +32,7 @@
                         <a class="nav-link" href="#">Actus</a>
                     </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">A Propos</a>
+                            <a class="nav-link" href="#">À Propos</a>
                         </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
@@ -45,67 +46,57 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb fil">
                 <li class="breadcrumb-item"><a href="#" class="fil">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page"> Actus</li>
+                <li class="breadcrumb-item active" aria-current="page"> Actus / Article en cours</li>
             </ol>
         </nav>
         <div class="title-page text-center">
-            <h1> Improving WebAssembly performance in browsers </h1>
+            <h1> Amélioration des performances de WebAssembly dans les navigateurs </h1>
         </div>
         <div class="row">
-            <div> <img src="./images/WebAssembly-Explained.jpg" class="img-backg col-8 offset-2"> </div>
+            <div> <img src="./images/WebAssembly-Explained.jpg" class="col-8 offset-2 mb-3"> </div>
                 <div class="col-6 offset-3">
                     <div class="text-justify">
                         <p> 
-                            Some speed improvements will come as browsers improve WebAssembly support in their engines. The browser vendors are working on these issues independently.
-                            <h3>Faster function calls between JS and WebAssembly </h3>
-                            Currently, calling a WebAssembly function in JS code is slower than it needs to be. That’s because it has to do something called “trampolining”. The JIT doesn’t know how to deal directly with WebAssembly, so it has to route the WebAssembly to something that does. This is a slow piece of code in the engine itself, which does setup to run the optimized WebAssembly code.
-                            This can be up to 100x slower than it would be if the JIT knew how to handle it directly.
-                            You won’t notice this overhead if you’re passing a single large task off to the WebAssembly module. But if you have lots of back-and-forth between WebAssembly and JS (as you do with smaller tasks), then this overhead is noticeable.
+                            Certaines améliorations de la vitesse viendront à mesure que les navigateurs amélioreront la prise en charge de WebAssembly dans leurs moteurs. Les éditeurs de navigateurs travaillent sur ces problèmes de manière indépendante.
+                            <h3>Appels de fonction plus rapides entre JS et WebAssembly</h3>
+                            Actuellement, l'appel d'une fonction WebAssembly dans le code JS est plus lent que nécessaire. C’est parce qu’il faut faire quelque chose qui s'appelle «trampoline». JIT ne sait pas comment traiter directement avec WebAssembly, il doit donc acheminer WebAssembly vers quelque chose qui le fait. Il s’agit d’un élément de code lent dans le moteur lui-même, qui permet d’exécuter le code optimisé WebAssembly. Cela peut être jusqu'à 100 fois plus lent que si le JIT savait comment le gérer directement. Vous ne remarquerez pas cette surcharge si vous passez une seule tâche volumineuse au module WebAssembly. Mais si vous avez beaucoup de va-et-vient entre WebAssembly et JS (comme vous le faites pour des tâches plus petites), alors cette surcharge est perceptible.
                         </p>
                         <p>
-                            <h3>Faster load time</h3>
-                            JITs have to manage the tradeoff between faster load times and faster execution times. If you spend more time compiling and optimizing ahead of time, that speeds up execution, but it slows down start up.
-                            There’s a lot of ongoing work to balance up-front compilation (which ensures there is no jank once the code starts running) and the basic fact that most parts of the code won’t be run enough times to make optimization worth it.
-                            Since WebAssembly doesn’t need to speculate what types will be used, the engines don’t have to worry about monitoring the types at runtime. This gives them more options, for example parallelizing compilation work with execution.
-                            Plus, recent additions to the JavaScript API will allow streaming compilation of WebAssembly. This means that the engine can start compiling while bytes are still being downloaded.
-                            In Firefox we’re working on a two-compiler system. One compiler will run ahead of time and do a pretty good job at optimizing the code. While that’s running code, another compiler will do a full optimization in the background. The fully-optimized version of the code will be swapped in when it’s ready.
+                            <h3>Temps de chargement plus rapide</h3>
+                            Les JIT doivent gérer le compromis entre des temps de chargement plus courts et des temps d'exécution plus rapides. Si vous passez plus de temps à compiler et à optimiser à l'avance, cela accélère l'exécution, mais ralentit le démarrage. Il ya beaucoup de travail en cours pour équilibrer la compilation initiale (ce qui garantit qu’il n’ya plus de jank une fois le code démarré) et le fait est que la plupart des parties du code ne seront pas exécutées assez souvent pour que l’optimisation en vaille la peine. WebAssembly n'ayant pas besoin de spéculer sur les types qui seront utilisés, les moteurs n'ont pas à se soucier de la surveillance des types au moment de l'exécution. Cela leur donne plus d'options, par exemple en parallélisant le travail de compilation avec l'exécution. De plus, les ajouts récents à l'API JavaScript permettront la compilation en continu de WebAssembly. Cela signifie que le moteur peut commencer à compiler alors que des octets sont encore en cours de téléchargement. Dans Firefox, nous travaillons sur un système à deux compilateurs. Un compilateur s'exécutera à l'avance et fera un très bon travail pour optimiser le code. Pendant que ce code est en cours d’exécution, un autre compilateur effectuera une optimisation complète en arrière-plan. La version entièrement optimisée du code sera permutée dès qu’elle sera prête.
                         </p>
                         <p>
-                            <h3>Adding post-MVP features to the spec</h3>
-                            One of the goals of WebAssembly is to specify in small chunks and test along the way, rather than designing everything up front.
-                            This means there are lots of features that are expected, but haven’t been 100% thought-through yet. They will have to go through the specification process, which all of the browser vendors are active in.
-                            These features are called future features. Here are just a few.
+                            <h3>Ajout de fonctionnalités post-MVP à la spécification</h3>
+                            L'un des objectifs de WebAssembly est de spécifier de petits morceaux et de tester en cours de route plutôt que de tout concevoir à l'avance. Cela signifie que de nombreuses fonctionnalités sont attendues, mais qu’elles n’ont pas encore été entièrement réfléchies. Ils devront passer par le processus de spécification, dans lequel tous les éditeurs de navigateurs sont actifs. Ces fonctionnalités sont appelées fonctionnalités futures. En voici quelques exemples.
                         </p>
                         <p>
-                            <h3>Working directly with the DOM </h3>
-                            Currently, there’s no way to interact with the DOM. This means you can’t do something like element.innerHTML to update a node from WebAssembly.
-                            Instead, you have to go through JS to set the value. This can mean passing a value back to the JavaScript caller. On the other hand, it can mean calling a JavaScript function from within WebAssembly—both JavaScript and WebAssembly functions can be used as imports in a WebAssembly module.
+                            <h3>Travailler directement avec le DOM </h3>
+                            Actuellement, il n’ya aucun moyen d’interagir avec le DOM. Cela signifie que vous ne pouvez pas faire quelque chose comme element.innerHTML pour mettre à jour un noeud à partir de WebAssembly. Au lieu de cela, vous devez passer par JS pour définir la valeur. Cela peut signifier renvoyer une valeur à l'appelant JavaScript. D'autre part, cela peut signifier l'appel d'une fonction JavaScript à partir de WebAssembly. Les fonctions JavaScript et WebAssembly peuvent être utilisées en tant qu'importations dans un module WebAssembly. Quoi qu'il en soit, il est probable que l'utilisation de JavaScript soit plus lente que l'accès direct. Certaines applications de WebAssembly peuvent être bloquées jusqu'à ce que le problème soit résolu.
                         </p>
                         <p>
-                            Either way, it is likely that going through JavaScript is slower than direct access would be. Some applications of WebAssembly may be held up until this is resolved.
-                            <h3> Shared memory concurrency </h3>
-                            One way to speed up code is to make it possible for different parts of the code to run at the same time, in parallel. This can sometimes backfire, though, since the overhead of communication between threads can take up more time than the task would have in the first place.
-                            But if you can share memory between threads, it reduces this overhead. To do this, WebAssembly will use JavaScript’s new SharedArrayBuffer. Once that is in place in the browsers, the working group can start specifying how WebAssembly should work with them.
+                            <h3> Accès simultané à la mémoire partagée </h3>
+                            Une façon d'accélérer le code est de permettre à différentes parties du code de s'exécuter en même temps, en parallèle. Cependant, cela peut parfois se retourner contre vous, car la surcharge de communication entre les threads peut prendre plus de temps que la tâche n'en aurait au départ. Mais si vous pouvez partager la mémoire entre les threads, cela réduit ce temps système. Pour ce faire, WebAssembly utilisera le nouveau SharedArrayBuffer de JavaScript. Une fois que cela est en place dans les navigateurs, le groupe de travail peut commencer à spécifier comment WebAssembly doit fonctionner avec eux.
                         <p>
                             <h3>SIMD</h3>
-                            If you read other posts or watch talks about WebAssembly, you may hear about SIMD support. The acronym stands for single instruction, multiple data. It’s another way of running things in parallel.
-                            SIMD makes it possible to take a large data structure, like a vector of different numbers, and apply the same instruction to different parts at the same time. In this way, it can drastically speed up the kinds of complex computations you need for games or VR.
-                            This is not too important for the average web app developer. But it is very important to developers working with multimedia, such as game developers.
+                            Si vous lisez d'autres articles ou regardez des discussions sur WebAssembly, vous entendrez peut-être parler du support SIMD. L'acronyme signifie une seule instruction, plusieurs données. C’est une autre façon de faire les choses en parallèle. SIMD permet de prendre une grande structure de données, comme un vecteur de nombres différents, et d'appliquer la même instruction à différentes parties en même temps. De cette façon, il peut considérablement accélérer les types de calculs complexes dont vous avez besoin pour les jeux ou la réalité virtuelle. Ce n'est pas trop important pour le développeur d'applications web moyen. Mais il est très important pour les développeurs travaillant avec le multimédia, tels que les développeurs de jeux.
                         </p>
                         <p>
-                            <h3>Exception handling</h3>
-                            Many code bases in languages like C++ use exceptions. However, exceptions aren’t yet specified as part of WebAssembly.
-                            If you are compiling your code with Emscripten, it will emulate exception handling for some compiler optimization levels. This is pretty slow, though, so you may want to use the DISABLE_EXCEPTION_CATCHING flag to turn it off.
-                            Once exceptions are handled natively in WebAssembly, this emulation won’t be necessary.
+                            <h3>Gestion des exceptions</h3>
+                            De nombreuses bases de code dans des langages tels que C ++ utilisent des exceptions. Cependant, les exceptions ne sont pas encore spécifiées dans WebAssembly. Si vous compilez votre code avec Emscripten, il émulera la gestion des exceptions pour certains niveaux d'optimisation du compilateur. C'est assez lent, cependant, vous pouvez donc utiliser l'indicateur DISABLE_EXCEPTION_CATCHING pour le désactiver. Une fois que les exceptions sont gérées de manière native dans WebAssembly, cette émulation ne sera plus nécessaire.
                         </p>
                         <p>
-                            <h3>Other improvements—making things easier for developers</h3>
-                            Some future features don’t affect performance, but will make it easier for developers to work with WebAssembly.
-                                First-class source-level developer tools. Currently, debugging WebAssembly in the browser is like debugging raw assembly. Very few developers can mentally map their source code to assembly, though. We’re looking at how we can improve tooling support so that developers can debug their source code.
-                                Garbage collection. If you can define your types ahead of time, you should be able to turn your code into WebAssembly. So code using something like TypeScript should be compilable to WebAssembly. The only hitch currently, though, is that WebAssembly doesn’t know how to interact with existing garbage collectors, like the one built in to the JS engine. The idea of this future feature is to give WebAssembly first-class access to the builtin GC with a set of low-level GC primitive types and operations.
-                                ES6 Module integration. Browsers are currently adding support for loading JavaScript modules using the script tag. Once this feature is added.
+                            <h3>Autres améliorations facilitant la tâche des développeurs</h3>
+                            Certaines fonctionnalités futures n’affecteront pas les performances, mais permettront aux développeurs de travailler plus facilement avec WebAssembly.
+                            <ul>
+                                <li>Des outils de développement de niveau source de première classe. Actuellement, le débogage de WebAssembly dans le navigateur revient à déboguer l’assemblage brut. Très peu de développeurs peuvent toutefois mapper mentalement leur code source en assembleur. Nous cherchons des moyens d’améliorer la prise en charge des outils afin que les développeurs puissent déboguer leur code source.</li>
+                                <li>Collecte des ordures. Si vous pouvez définir vos types à l'avance, vous devriez pouvoir transformer votre code en WebAssembly. Le code utilisant quelque chose comme TypeScript devrait donc être compilable avec WebAssembly. Le seul accroc qui existe actuellement, cependant, est que WebAssembly ne sait pas comment interagir avec les garbage collectors existants, comme celui intégré au moteur JS. L’idée de cette fonctionnalité future est de donner à WebAssembly un accès de premier ordre au GC intégré avec un ensemble de types de primitives et d’opérations de GC de bas niveau.</li>
+                                <li>Intégration du module ES6. Les navigateurs ajoutent actuellement la prise en charge du chargement de modules JavaScript à l’aide de la balise script. Une fois cette fonctionnalité ajoutée.</li>
+                            </ul>
                         </p>
                     </div>
+                    <p class="border-source">
+                        <a href="https://hacks.mozilla.org/2017/02/where-is-webassembly-now-and-whats-next/"> Source</a>
+                    </p>
                 </div>
             </div>
         </div>
@@ -114,7 +105,7 @@
         <div class="container-fluid">
             <div class="row ">
                 <nav class="nav flex-column offset-2">
-                    <a class="nav-link" href="#">A propos</a>
+                    <a class="nav-link" href="#">À propos</a>
                     <a class="nav-link" href="#">Nous contacter</a>
                 </nav>
                 <nav class="nav flex-column offset-2">
