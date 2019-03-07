@@ -25,6 +25,11 @@ li a.nav-link{
     background-color: #8100F4;
     border-color: white;
 }
+
+.navbar a, h1{
+    font-family: 'Amaranth', sans-serif;
+}
+
 /* END CSS NAVBAR*/
 
 
@@ -33,7 +38,7 @@ footer nav a{
 
 /* BREADCRUMB CSS*/
 
-.fil{
+.test {
     color:#8100F4;
 }
 
