@@ -14,8 +14,6 @@ li a.nav-link{
     text-transform: uppercase;
 }
 
-
-
 .btn{
     color: #8100F4;
     border-color: #8100F4;
@@ -25,6 +23,10 @@ li a.nav-link{
 .btn:hover{
     background-color: #8100F4;
     border-color: white;
+}
+
+.navbar a, h1{
+    font-family: 'Amaranth', sans-serif;
 }
 
 /* BREADCRUMB */
@@ -82,6 +84,7 @@ footer{
 .fab{
     margin-right: 5px;
 }
+
 
 
 
