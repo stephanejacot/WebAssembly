@@ -1,0 +1,89 @@
+/* What's webAssembly page */
+
+.note_wwa{
+    background-color: #E8EBEF;
+}
+p{
+    text-align: justify; 
+}
+.wwa_page>h3{
+    margin-top: 3px;
+}
+/* Fonts */
+
+.navbar a, h1, h3{
+    font-family: 'Amaranth', sans-serif;
+}
+/* Homepage navbar */
+
+.logo{
+    width: 40px;
+    margin-right: 5px;
+}
+.navbar-brand{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+/* A voir ce que ça donne :
+#navbarSupportedContent{
+    margin-left: 40px;
+    font-size: 25px; */
+
+li a.nav-link{
+    margin-left:50px;
+    text-transform: uppercase; 
+}
+
+.btn{
+    color: #8100F4;
+    border-color: #8100F4;
+    background-color: white;
+}
+
+.btn:hover{
+    background-color: #8100F4;
+    border-color: white;
+}
+.fil {
+    color:#8100F4;
+}
+.title-page{
+    margin-top: 55px;
+    margin-bottom: 25px;
+}
+/* Homepage footer */
+
+footer nav a{
+    color: black;
+}
+
+footer{
+    margin-top: 50px;
+    border-top:1px solid #8100F4;
+    padding-top:10px;
+}
+.fab{
+    margin-right: 5px;
+}
+
+
+form{
+    margin-top:40px;
+}
+
+.contactezns{
+    margin-top: 30px;
+}
+
+/* .card-deck{
+    margin-top: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top:10px;
+}
+.card-footer{
+    text-align: right;
+} */
+
+
+

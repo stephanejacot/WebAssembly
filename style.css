@@ -1,21 +1,23 @@
+/* NAVBAR */ 
+
 .logo{
     width: 40px;
     margin-right: 5px;
 }
 .navbar-brand{
-    font-size: 25px;
+    font-size: 20px;
+    text-transform: uppercase;
 }
-#navbarSupportedContent{
-    margin-left: 40px;
-    font-size: 25px;
-}
+
 li a.nav-link{
-    margin-left:50px; 
+    margin-left:50px;
+    text-transform: uppercase;
 }
 
 .btn{
     color: #8100F4;
     border-color: #8100F4;
+    background-color: white;
 }
 
 .btn:hover{
@@ -23,6 +25,21 @@ li a.nav-link{
     border-color: white;
 }
 
+/* BREADCRUMB*/
+.fil {
+    color:#8100F4;
+}
+
+.carousel{
+    margin-top: 60px;
+}
+.titre-page{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+/* FOOTER*/
 footer nav a{
     color: black;
 }
@@ -38,9 +55,22 @@ footer{
     margin-top: 10px;
     padding-left: 50px;
     padding-right: 50px;
+}
+.fab{
+    margin-right: 5px;
+}
+
+/* A VOIR POUR SUPPRESSION >>> form*/
+form{
+    margin-top:40px;
+}
+.card-deck{
+    margin-top: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
     padding-top:10px;
 }
-.card-footer.us{
+.card-footer{
     text-align: right;
 }
 .team{
@@ -51,3 +81,23 @@ footer{
     font-size: 15px;
 }
 /* Fin style page aboutus*/
+
+/* CARDS COLUMN*/
+.card>img{
+    width: 100%;
+    height: auto;
+}
+
+.navbar a, h1{
+    font-family: 'Amaranth', sans-serif;
+}
+
+.bg-card{
+    background-color: #8100F4;
+}
+
+.card-text{
+    text-align: justify;
+}
+
+>>>>>>> 0f54ec58c2b2a7bbd1f0ec4d77f75c2e132b80a5

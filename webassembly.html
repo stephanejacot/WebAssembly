@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="icon" type="image/xpng" href="./images/WebAssembly_Logo.png">
+    <title>WebAssembly</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+            <img src="./images/WebAssembly_Logo.png" class="logo" alt="logo">
+            <a class="navbar-brand" href="https://webassembly.org/">WebAssembly</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">Accueil <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./webassembly.html">WebAssembly <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./actus.html">Actus <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./aboutus.html">À Propos<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+
+        </nav>
+    </header>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb fil">
+        <li class="breadcrumb-item"><a href="./index.html" class="fil">Accueil</a></li>
+        <li class="breadcrumb-item active" aria-current="page">WebAssembly</li>
+        </ol>
+    </nav>
+    <div class="wwa_page">
+
+
+        <h1 class="title-page text-center" id="Qu_est-ce_que_WebAssembly">Qu'est-ce que WebAssembly ?</h1>
+
+        <div class="container_wwa_p1">
+            <div class="row">
+                <div class="col-10 offset-1" id="putaindimage">
+                    <img src="./images/wwa1.png" class="img-fluid mb-5" alt="What is Webassembly">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8 offset-2" id="wwa_p1.0">
+                    <p>WebAssembly est un nouveau type de code pouvant être exécuté dans les navigateurs modernes et
+                        fournissant de nouvelles fonctionnalités ainsi que des gains majeurs en performance. Il
+                        n'est pas
+                        particulièrement destiné à être écrit à la main, mais il est plutôt conçu pour être une
+                        cible de
+                        compilation
+                        efficace pour les langages source de bas niveau tels C, C ++, Rust, etc. WebAssembly est un
+                        langage bas niveau, de style assembleur, avec un format
+                        binaire compact qui tourne avec des performances proches du natif et fourni au langage une
+                        gestion
+                        bas niveau de la mémoire tout comme le C++ et Rust comme cible de compilation afin de
+                        pouvoir
+                        tourner
+                        sur le web. (Notez qu'une priorité de WebAssembly est de supporter les langages avec
+                        modèles de mémoire à garbage-collector dans le futur.)
+                    </p>
+                    <p> JavaScript est un langage haut niveau, flexible et suffisamment expressif pour écrire des
+                        applications
+                        web. Il possède beaucoup d'avantages il est dynamiquement typé, ne nécessite aucune étape
+                        de compilation, et a un écosystème foisonnant qui lui fourni de puissants frameworks,
+                        bibliothèques,
+                        et
+                        autres outils.</p>
+                    <p>Cela a d'énormes implications pour la plate-forme web il fournit un moyen d'exécuter un
+                        code écrit dans
+                        divers
+                        langages sur le web à une vitesse proche du natif, avec des applications clientes exécutées
+                        sur le web
+                        qui
+                        auparavant n'auraient pas pu être réalisées.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8 offset-2" id="wwa_p1.1">
+                    <p>De plus, vous ne devez même pas savoir comment créer du code WebAssembly pour en profiter.
+                        Les modules
+                        WebAssembly peuvent être importés dans une application web (ou Node.js) en exposant les
+                        fonctions
+                        WebAssembly à utiliser via JavaScript. Les frameworks JavaScript pourraient utiliser
+                        WebAssembly pour
+                        conférer
+                        des avantages massifs de performance et de nouvelles fonctionnalités tout en rendant la
+                        fonctionnalité
+                        facilement accessible aux développeurs web.</p>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="col-8 offset-2" id="Objectifs_de_WebAssembly">Objectifs de WebAssembly</h3>
+
+        <p class="summary_wwa col-8 offset-2">WebAssembly est en cours de création en tant que standard ouvert au
+            sein du <a rel="noopener" href="https://www.w3.org/community/webassembly/" class="external_link">W3C
+                WebAssembly
+                Community
+                Group</a> avec les objectif suivants :</p>
+        <div class="container_wwa_p2 col-8 offset-2">
+            <div class="row mb-3">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Être rapide, efficace et portable</strong></h5>
+                            <p class="card-text">Le code WebAssembly peut
+                                être exécuté à une vitesse proche du
+                                natif sur plusieurs plateformes en profitant des capacités matérielles communes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Ne pas casser le web</strong></h5>
+                            <p class="card-text">WebAssembly est conçu de manière à facilement
+                                s'associer aux autres
+                                technologies
+                                web et à maintenir une rétrocompatibilité.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>La sécurité</strong></h5>
+                            <p class="card-text">WebAssembly est conçu pour être exécuté dans un
+                                environnement sûr, en
+                                sandbox.
+                                Comme d'autres codes web, il imposera les règles de même origine du navigateur,
+                                ainsi
+                                que
+                                ses
+                                politiques d'autorisations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Être lisible et débuggable</strong></h5>
+                            <p class="card-text">WebAssembly est un langage d'assemblage de
+                                bas niveau, mais son
+                                format de texte est lisible par l'homme et permet au code d'être écrit, lu et
+                                débuggé à la main.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="note_wwa col-8 offset-2">
+            <p><strong>Note </strong>: WebAssembly aura également des usages en dehors du web
+                et des
+                environnements JavaScript (voir Non-web embeddings).
+            </p>
+        </div>
+        <div class="container_wwa_p3 col-8 offset-2">
+            <h3 id="Comment_WebAssembly_s'intègre_dans_la_plateforme_web">Comment WebAssembly s'intègre dans la
+                plateforme
+                web?</h3>
+
+            <p>La plateforme web peut s'imaginer comme composée de deux parties :</p>
+            <div class="row">
+                <div class="col-lg-6">
+                    <ul>
+                        <li>Une machine virtuelle (VM) qui exécute le code de la Web app, e.g le code JavaScript qui
+                            fait
+                            tourner
+                            vos
+                            applications.
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <ul>
+                        <li>Une ensemble de Web APIs</a> que la Web app peut appeler
+                            pour
+                            contrôler les fonctionnalités des navigateurs/appareils et réaliser des actions (<a
+                                href="#">DOM</a>, <a href="#">CSSOM</a>, <a href="#">WebGL</a>, <a
+                                href="#">IndexedDB</a>,
+                            <a href="#">Web Audio API</a>, etc.).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-10 offset-1" id="putaindimage2">
+                <img src="./images/wwa2.png" class="img-fluid" alt="Webassembly integration">
+            </div>
+            <p>De plus, le coût du téléchargement, du parsing et de la compilation de très grosses applications
+                JavaScript peut être prohibitif. L'utilisation de mobiles ou d'autres plateformes à puissance
+                réduite accentue d'autant plus l'effet de goulet d'étranglement des performances.
+            </p>
+
+            <p>WebAssembly est un langage différent de JavaScript, mais n'a pas pour but de le remplacer. Il
+                faut plutôt
+                l'envisager comme complément, travaillant "main dans la main" avec JavaScript, permettant ainsi
+                aux
+                développeurs WEB de prendre avantage des points forts de chacun des deux langages :
+            </p>
+
+
+            <p>Avec l'apparition du WebAssembly dans les navigateurs, la machine virtuelle dont nous parlions
+                précédemment
+                charge et exécute deux type de code - JavaScript ET WebAssembly.
+            </p>
+
+            <p>Les deux différents type de code peuvent s'appeler si nécessaire — l'API WebAssembly JavaScript
+                enveloppe le
+                code exporté avec des fonctions JavaScript qui peuvent être appelées normalement et le code
+                WebAssembly
+                peut
+                importer et appeler normalement de manière synchrone les fonctions JavaScript. En fait, l'unité
+                de base
+                de
+                code
+                WebAssembly est appelée module et est similaire par de nombreux aspects aux modules ES2015.
+            </p>
+        </div>
+        <div class="container_wwa_sp1 col-8 offset-2">
+            <h3 id="Les_concepts_clefs_du_WebAssembly" class="highlight-spanned">Les concepts clefs du
+                WebAssembly</h3>
+
+            <p>Il y a différents concepts clefs nécessaires pour comprendre comment fonctionne WebAssembly dans
+                le
+                navigateur.
+                Tous ces concepts se retrouvent totalement dans l'API WebAssembly JavaScript.
+            </p>
+
+            <div class="row mb-3">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Module </strong></h5>
+                            <p class="card-text">Représente un binaire WebAssembly qui a été compilé en code
+                                exécutable par
+                                le
+                                navigateur. Un module est sans état et peut donc être explicitement mis en cache dans IndexedDB ou partagé entre le
+                                contexte
+                                fenêtre et les
+                                workers (via post message()). Un module
+                                déclare des imports et des exports.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Instance</strong></h5>
+                            <p class="card-text">Représente un module associé avec tous les états
+                                qu'il utilise à
+                                l'exécution
+                                à
+                                savoir la mémoire, la table précédemment citée et un ensemble de données
+                                importées. Une
+                                instance est
+                                comme
+                                un module ES2015 qui a été chargée dans un contexte global avec un ensemble
+                                d'imports.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Table</strong></h5>
+                            <p class="card-text">Représente un tableau typé de référence (comme par
+                                exemple des
+                                fonctions)
+                                qui
+                                ne
+                                peut pas être stocké de manière brute en mémoire (pour des raisons de sécurité
+                                et de
+                                portabilité).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Mémoire</strong></h5>
+                            <p class="card-text">Représente un ArrayBuffer redimensionnable qui
+                                contient un
+                                tableau
+                                d'octets
+                                contiguë accessible en lecture/écriture par les instructions bas niveau d'accès
+                                mémoire du
+                                WebAssembly.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            </ul>
+            <div class="note_wwa">
+                <p><strong>Note</strong> : Il existe des propositions future pour <a rel="noopener"
+                        href="http://webassembly.org/docs/gc/" class="external_link">permettre au WebAssembly
+                        d'appeler directement
+                        l'API Web</a>.
+                </p>
+            </div>
+        </div>
+        <div class="container_wwa_sp3 col-8 offset-2">
+            <h3 id="Écrire_du_WebAssembly_directement" class="highlight-spanned"><span class="highlight-span">Écrire
+                    du
+                    WebAssembly directement</span></h3>
+
+            <p>Voulez vous construire votre propre compilateur ou vos propres outils ou faire une
+                librairie
+                JavaScript
+                qui
+                génère du WebAssembly à la volée ?</p>
+
+            <p>De la même manière que les langages assembleur physiques, le format binaire du
+                WebAssembly a une
+                représentation textuelle. Ces deux formats ont un fonctionnement équivalents. Vous
+                pouvez écrire
+                ou
+                générer
+                ce format à la main et ensuite le convertir au format binaire avec un des nombreux
+                <a rel="noopener" href="http://webassembly.org/getting-started/advanced-tools/"
+                    class="external external-icon">outils de
+                    conversion texte vers binaire WebAssembly</a>.
+            </p>
+
+            <p>Pour un guide simple sur comment réaliser ceci, regarder notre article
+                <a href="https://developer.mozilla.org/en-US/docs/WebAssembly/Text_format_to_wasm">Convertir
+                    le
+                    WebAssembly
+                    au format text en wasm</a>.
+            </p>
+        </div>
+        <div class="container_wwa_p6 col-8 offset-2">
+            <h3 id="Voir_aussi">Voir aussi</h3>
+
+            <ul>
+                <li><a rel="noopener" href="https://hacks.mozilla.org/category/webassembly/"
+                        class="external external-icon">WebAssembly articles on Mozilla Hacks
+                        blog</a>
+                </li>
+                <li><a rel="noopener" href="https://research.mozilla.org/webassembly/"
+                        class="external external-icon">WebAssembly on Mozilla Research</a>
+                </li>
+                <li><a href="/en-US/docs/WebAssembly/Loading_and_running">Loading and running
+                        WebAssembly
+                        code</a>—
+                    trouvez
+                    comment charger votre propre module WebAssembly dans une page web.
+                </li>
+                <li><a href="/en-US/docs/WebAssembly/Using_the_JavaScript_API">Using the WebAssembly
+                        JavaScript
+                        API</a>
+                    —
+                    trouvez comment utiliser les autres fonctionnalités majeures de l'API JavaScript
+                    WebAssembly.
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+
+    <footer class="bg-light">
+        <div class="container-fluid">
+            <div class="row ">
+                <nav class="nav flex-column offset-2">
+                    <a class="nav-link" href="./aboutus.html">À propos</a>
+                    <a class="nav-link" href="./contact-us.html">Nous contacter</a>
+                </nav>
+                <nav class="nav flex-column offset-2">
+                    <a class="nav-link" href="./webassembly.html">WebAssembly</a>
+                    <a class="nav-link" href="#">Mentions légales</a>
+                </nav>
+                <nav class="nav flex-column offset-2">
+                    <a class="nav-link" href="#"><i class="fab fa-facebook-square"></i>Facebook</a>
+                    <a class="nav-link" href="#"><i class="fab fa-github"></i>Github</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,7 +1,9 @@
+/* CSS NAVBAR*/
 .logo{
     width: 40px;
     margin-right: 5px;
 }
+
 .navbar-brand{
     font-size: 25px;
 }
@@ -9,6 +11,7 @@
     margin-left: 40px;
     font-size: 25px;
 }
+
 li a.nav-link{
     margin-left:50px; 
 }
@@ -22,7 +25,46 @@ li a.nav-link{
     background-color: #8100F4;
     border-color: white;
 }
+/* END CSS NAVBAR*/
 
+
+footer nav a{
+    color: black;
+
+/* BREADCRUMB CSS*/
+
+.fil{
+    color:#8100F4;
+}
+
+/* END CSS BREADCRUMB*/
+
+
+/* CSS CONTENT*/
+.title-page{
+    margin-top: 55px;
+    margin-bottom: 25px;
+}
+
+.text-justify >p{
+    margin-top: 20px;
+}
+
+h3{
+    font-family: 'Amaranth', sans-serif;
+}
+
+.border-source{
+    background-color: #E8EBEF;
+    padding:5px 0 5px 5px;
+}
+
+.border-source a{
+    color: #8100F4;
+}
+/* END CSS CONTENT*/
+
+/* CSS FOOTER*/
 footer nav a{
     color: black;
 }
@@ -32,9 +74,17 @@ footer{
     border-top:1px solid #8100F4;
     padding-top:10px;
 }
+
+.fab{
+    margin-right: 5px;
+}
+
+/* END CSS FOOTER*/
+
+
 /* Style page aboutus */
 .card-deck.us{
-    margin-top: 50px;
+    margin-top: 10px;
     padding-left: 50px;
     padding-right: 50px;
     padding-top:10px;
@@ -43,6 +93,6 @@ footer{
     text-align: right;
 }
 .team{
-    margin-top: 100px;
+    margin-top: 50px;
 }
 /* Fin style page aboutus */
