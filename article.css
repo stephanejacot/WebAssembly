@@ -11,14 +11,7 @@
     margin-left: 40px;
     font-size: 25px;
 }
-<<<<<<< HEAD:style.css
-=======
 
-.navbar a, h1{
-    font-family: 'Amaranth', sans-serif;
-}
-
->>>>>>> malou:article.css
 li a.nav-link{
     margin-left:50px; 
 }
@@ -34,15 +27,16 @@ li a.nav-link{
 }
 /* END CSS NAVBAR*/
 
-<<<<<<< HEAD:style.css
+
 footer nav a{
     color: black;
-=======
 
 /* BREADCRUMB CSS*/
-.fil {
+
+.fil{
     color:#8100F4;
 }
+
 /* END CSS BREADCRUMB*/
 
 
@@ -50,28 +44,11 @@ footer nav a{
 .title-page{
     margin-top: 55px;
     margin-bottom: 25px;
->>>>>>> malou:article.css
 }
 
 .text-justify >p{
     margin-top: 20px;
 }
-<<<<<<< HEAD:style.css
-/* Style page aboutus */
-.card-deck.us{
-    margin-top: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top:10px;
-}
-.card-footer.us{
-    text-align: right;
-}
-.team{
-    margin-top: 50px;
-}
-/* Fin style page aboutus */
-=======
 
 h3{
     font-family: 'Amaranth', sans-serif;
@@ -104,4 +81,18 @@ footer{
 
 /* END CSS FOOTER*/
 
->>>>>>> malou:article.css
+
+/* Style page aboutus */
+.card-deck.us{
+    margin-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top:10px;
+}
+.card-footer.us{
+    text-align: right;
+}
+.team{
+    margin-top: 50px;
+}
+/* Fin style page aboutus */
